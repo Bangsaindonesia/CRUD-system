@@ -1,0 +1,74 @@
+/* Reset basic styling */
+body, h1, p, input, label, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Styling for body */
+body {
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: #e0e0e0;
+}
+
+/* Form container styling */
+.form-container {
+    background: linear-gradient(135deg, #0f3460, #1a1a2e);
+    padding: 30px 40px;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Label styling */
+form label {
+    display: block;
+    margin-top: 15px;
+    color: #66d9ff;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Input styling */
+form input[type="text"],
+form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: #1a1a2e;
+    color: #e0e0e0;
+    font-size: 14px;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus {
+    outline: none;
+    border-color: #66d9ff;
+    box-shadow: 0 0 5px #66d9ff;
+}
+
+/* Button styling */
+form button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background: linear-gradient(135deg, #66d9ff, #1a73e8);
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: linear-gradient(135deg, #1a73e8, #66d9ff);
+}

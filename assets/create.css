@@ -1,0 +1,135 @@
+/* Resetting basic styles */
+body, h1, p, input, label, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* General body styling */
+body {
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    color: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Form page container */
+.form-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Form styling */
+.form-container {
+    background: linear-gradient(135deg, #0f3460, #1a1a2e);
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    width: 100%;
+}
+
+form label {
+    display: block;
+    margin-top: 15px;
+    color: #66d9ff;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+form input[type="text"],
+form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: #1a1a2e;
+    color: #e0e0e0;
+    font-size: 14px;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus {
+    outline: none;
+    border-color: #66d9ff;
+    box-shadow: 0 0 5px #66d9ff;
+}
+
+form input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background: linear-gradient(135deg, #66d9ff, #1a73e8);
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background: linear-gradient(135deg, #1a73e8, #66d9ff);
+}
+
+/* Popup styling */
+#popup {
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    background: linear-gradient(135deg, #0f3460, #1a1a2e);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 300px;
+    max-width: 90%;
+    z-index: 1000;
+}
+
+#popup p {
+    margin-bottom: 20px;
+    color: #e0e0e0;
+}
+
+#popup.success {
+    border-left: 4px solid #4caf50;
+}
+
+#popup.error {
+    border-left: 4px solid #e74c3c;
+}
+
+#popup button {
+    background: linear-gradient(135deg, #66d9ff, #1a73e8);
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 10px;
+    transition: background 0.3s;
+}
+
+#popup button:hover {
+    background: linear-gradient(135deg, #1a73e8, #66d9ff);
+}
+
+/* Style the 'Kembali' button */
+#popup a button {
+    background: linear-gradient(135deg, #555555, #757575);
+}
+
+#popup a button:hover {
+    background: linear-gradient(135deg, #757575, #555555);
+}

@@ -1,0 +1,146 @@
+/* Gaya umum */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #0f3460, #1a1a2e);
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Judul */
+h2 {
+    color: #66d9ff;
+    text-align: center;
+}
+
+/* Formulir pencarian */
+.search-form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.search-form input[type="text"] {
+    width: calc(100% - 80px);
+    padding: 8px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: #1a1a2e;
+    color: #e0e0e0;
+    font-size: 14px;
+}
+
+.search-form input[type="text"]:focus {
+    outline: none;
+    border-color: #66d9ff;
+    box-shadow: 0 0 5px #66d9ff;
+}
+
+.search-form button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    background: linear-gradient(135deg, #66d9ff, #1a73e8);
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.search-form button:hover {
+    background: linear-gradient(135deg, #1a73e8, #66d9ff);
+}
+
+.search-form .btn-reset a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Tabel */
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #333;
+}
+
+th {
+    background: linear-gradient(135deg, #66d9ff, #1a73e8);
+    color: #ffffff;
+}
+
+tr:hover {
+    background-color: #2a2a3e;
+}
+
+/* Tombol aksi */
+.btn, .btn-edit, .btn-delete {
+    padding: 8px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.btn {
+    background: linear-gradient(135deg, #66d9ff, #1a73e8);
+    display: inline-block;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.btn-edit {
+    background: linear-gradient(135deg, #4caf50, #388e3c);
+}
+
+.btn-delete {
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.page-link {
+    color: #66d9ff;
+    margin: 0 5px;
+    padding: 6px 12px;
+    text-decoration: none;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: #1a1a2e;
+    transition: background 0.3s;
+}
+
+.page-link.active {
+    background: linear-gradient(135deg, #66d9ff, #1a73e8);
+    color: #fff;
+    border: 1px solid #66d9ff;
+}
+
+.page-link:hover {
+    background-color: #2a2a3e;
+}
